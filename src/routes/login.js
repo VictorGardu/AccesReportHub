@@ -9,4 +9,8 @@ router.get('/register', LoginController.register);
 router.post('/register', LoginController.storeUser);
 router.get('/logout', LoginController.logout);
 
+router.post('/', LoginController.first);
+router.post('/first', LoginController.second);
+
+
 module.exports = router;
