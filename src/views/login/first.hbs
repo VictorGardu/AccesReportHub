@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Drag an drop de reconocimiento</title>
+                <link rel="stylesheet" href="/css/drag.css">
+        </head>
+
+<body>
+<img src="/images/logoImp.png"  class=" mx-auto w-128 h-32">
+
+
+<h1 class="text-center my-25 text-3xl">Ya mero acabamos </b></h1>
+
+<div class="drop-area block mx-auto my-12 p-8 bg-white w-1/3 border border-gray-200 rounded-lg shadow-lg text-gray-800" >
+        <h2>Arrastra y suelta el txt de reconocimiento</h2>
+        <span>o</span>
+        <button class="hover:bg-indigo-500 py-3 px-4 rounded-md text-center 
+          focus:outline-none">Selecciona tus archivos</button>
+        <input type = "file" name="" id="input-file" hidden multiple />
+</div>
+
+<form action="" method="POST" class="mt-4">
+
+<a href="/ruta-deseada" class="nav-link font-semibold bg-blue-700 text-white hover:bg-blue-500 py-3 px-4 rounded-md">Nombre del Botón</a>
+
+
+<button type="submit" class="nav-link font-semibold bg-indigo-700 text-white
+          hover:bg-indigo-500 py-3 px-4 rounded-md text-center w-full
+          focus:outline-none">Siguiente</button>
+</form>
+
+
+
+
+<div id = "preview"></div>
+
+        <script src="/js/draganddrop.js"></script>
+
+</body>
+
+</html>

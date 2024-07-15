@@ -62,8 +62,6 @@ function auth(req, res) {
 module.exports = auth;
 
 
-
-
 function register(req, res){
     if(req.session.loggedin != true){
 
@@ -138,6 +136,28 @@ function logout(req, res){
         res.redirect('/login');
 }
 
+function first(req, res){
+    if(req.session.loggedin != true){
+
+        res.redirect('/');
+
+    }else{
+        res.render('login/first');
+
+    }
+}
+
+function second(req, res){
+    if(req.session.loggedin != true){
+
+        res.redirect('/');
+
+    }else{
+        res.render('login/second');
+
+    }
+}
+
 
 
 module.exports = {
@@ -146,5 +166,8 @@ module.exports = {
     storeUser,
     auth,
     logout,
+    first,
+    second,
+
 }
 
